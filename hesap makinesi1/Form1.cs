@@ -180,11 +180,7 @@ namespace hesap_makinesi1
         }
 
         private void kareHesapla_Click(object sender, EventArgs e)
-        {
-            //_islem =_ilksayi ^2;
-            //_ekrantemizlenecekmi = true;
-            //_ilksayi=Convert.ToInt32(label1.Text);
-           
+        {                 
             _ilksayi = Convert.ToInt32(label1.Text);
             _islem = _ilksayi * _ilksayi;
             label1.Text= Convert.ToString(_islem);
