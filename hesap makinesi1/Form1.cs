@@ -16,11 +16,6 @@ namespace hesap_makinesi1
         private bool _ekrantemizlenecekmi;
         int _ilksayi;
         int _ikincisayi;
-
-
-
-
-
         public Form1()
         {
             InitializeComponent();
