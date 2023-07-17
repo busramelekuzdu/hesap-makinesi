@@ -18,6 +18,9 @@ namespace hesap_makinesi1
         int _ikincisayi;
 
 
+
+
+
         public Form1()
         {
             InitializeComponent();
