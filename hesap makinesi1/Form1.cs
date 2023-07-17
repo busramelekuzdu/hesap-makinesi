@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace hesap_makinesi1
 {
     public partial class Form1 : Form
     {
-        private char _islem;
+        int _islem;
         private bool _ekrantemizlenecekmi;
         int _ilksayi;
         int _ikincisayi;
@@ -92,7 +93,7 @@ namespace hesap_makinesi1
 
             _islem = '-';
             _ekrantemizlenecekmi = true;
-            _ilksayi = Convert.ToInt32(label1.Text);           
+            _ilksayi = Convert.ToInt32(label1.Text);
         }
         private void rakam7_Click(object sender, EventArgs e)
         {
@@ -149,6 +150,7 @@ namespace hesap_makinesi1
         private void eşittir_Click(object sender, EventArgs e)
         {
             int sonuc = 0;
+            _ikincisayi = Convert.ToInt32(label1.Text);
             switch (_islem)
             {
                 case '+':
@@ -172,8 +174,20 @@ namespace hesap_makinesi1
             _ekrantemizlenecekmi = true;
             _ilksayi = Convert.ToInt32(label1.Text);
         }
+
         private void label1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void kareHesapla_Click(object sender, EventArgs e)
+        {
+            //_islem =_ilksayi ^2;
+            //_ekrantemizlenecekmi = true;
+            //_ilksayi=Convert.ToInt32(label1.Text);
+           
+            _ilksayi = Convert.ToInt32(label1.Text);
+            _islem = _ilksayi * _ilksayi;
+            label1.Text= Convert.ToString(_islem);
         }
     }
 }

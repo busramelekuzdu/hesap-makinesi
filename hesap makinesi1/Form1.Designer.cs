@@ -46,6 +46,7 @@
             this.toplama = new System.Windows.Forms.Button();
             this.rakam3 = new System.Windows.Forms.Button();
             this.rakam2 = new System.Windows.Forms.Button();
+            this.kareHesapla = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -236,11 +237,23 @@
             this.rakam2.UseVisualStyleBackColor = true;
             this.rakam2.Click += new System.EventHandler(this.rakam2_Click);
             // 
+            // kareHesapla
+            // 
+            this.kareHesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kareHesapla.Location = new System.Drawing.Point(12, 415);
+            this.kareHesapla.Name = "kareHesapla";
+            this.kareHesapla.Size = new System.Drawing.Size(75, 75);
+            this.kareHesapla.TabIndex = 17;
+            this.kareHesapla.Text = "n2";
+            this.kareHesapla.UseVisualStyleBackColor = true;
+            this.kareHesapla.Click += new System.EventHandler(this.kareHesapla_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 434);
+            this.ClientSize = new System.Drawing.Size(329, 495);
+            this.Controls.Add(this.kareHesapla);
             this.Controls.Add(this.rakam2);
             this.Controls.Add(this.rakam3);
             this.Controls.Add(this.toplama);
@@ -286,6 +299,7 @@
         private System.Windows.Forms.Button toplama;
         private System.Windows.Forms.Button rakam3;
         private System.Windows.Forms.Button rakam2;
+        private System.Windows.Forms.Button kareHesapla;
     }
 }
 
