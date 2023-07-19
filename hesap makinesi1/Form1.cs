@@ -174,16 +174,21 @@ namespace hesap_makinesi1
             _ekrantemizlenecekmi = true;
             _ilksayi = Convert.ToInt32(label1.Text);
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-        }
-
         private void kareHesapla_Click(object sender, EventArgs e)
-        {                 
+        {
             _ilksayi = Convert.ToInt32(label1.Text);
             _islem = _ilksayi * _ilksayi;
-            label1.Text= Convert.ToString(_islem);
+            label1.Text = Convert.ToString(_islem);
+        }
+
+        private void usHesaplama_Click(object sender, EventArgs e)
+        {
+            {
+                _ilksayi = Convert.ToInt32(label1.Text);
+                _ikincisayi = Convert.ToInt32(label1.Text);
+                double sonuc = Math.Pow(_ilksayi, _ikincisayi);
+                label1.Text = (sonuc.ToString());
+            }
         }
     }
 }

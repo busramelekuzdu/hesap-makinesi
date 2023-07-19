@@ -47,6 +47,7 @@
             this.rakam3 = new System.Windows.Forms.Button();
             this.rakam2 = new System.Windows.Forms.Button();
             this.kareHesapla = new System.Windows.Forms.Button();
+            this.usHesaplama = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +60,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "0";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // rakam1
             // 
@@ -248,11 +248,23 @@
             this.kareHesapla.UseVisualStyleBackColor = true;
             this.kareHesapla.Click += new System.EventHandler(this.kareHesapla_Click);
             // 
+            // usHesaplama
+            // 
+            this.usHesaplama.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.usHesaplama.Location = new System.Drawing.Point(93, 415);
+            this.usHesaplama.Name = "usHesaplama";
+            this.usHesaplama.Size = new System.Drawing.Size(75, 75);
+            this.usHesaplama.TabIndex = 18;
+            this.usHesaplama.Text = "üs";
+            this.usHesaplama.UseVisualStyleBackColor = true;
+            this.usHesaplama.Click += new System.EventHandler(this.usHesaplama_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 495);
+            this.Controls.Add(this.usHesaplama);
             this.Controls.Add(this.kareHesapla);
             this.Controls.Add(this.rakam2);
             this.Controls.Add(this.rakam3);
@@ -300,6 +312,7 @@
         private System.Windows.Forms.Button rakam3;
         private System.Windows.Forms.Button rakam2;
         private System.Windows.Forms.Button kareHesapla;
+        private System.Windows.Forms.Button usHesaplama;
     }
 }
 
