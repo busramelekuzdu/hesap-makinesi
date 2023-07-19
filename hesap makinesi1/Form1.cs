@@ -165,6 +165,9 @@ namespace hesap_makinesi1
                 case '/':
                     sonuc = _ilksayi / _ikincisayi;
                     break;
+                case '^':
+                    sonuc =Convert.ToInt32( Math.Pow(Convert.ToDouble( _ilksayi), Convert.ToDouble(_ikincisayi)));
+                    break;
             }
             label1.Text = Convert.ToString(sonuc);
         }
@@ -183,12 +186,9 @@ namespace hesap_makinesi1
 
         private void usHesaplama_Click(object sender, EventArgs e)
         {
-            {
-                _ilksayi = Convert.ToInt32(label1.Text);
-                _ikincisayi = Convert.ToInt32(label1.Text);
-                double sonuc = Math.Pow(_ilksayi, _ikincisayi);
-                label1.Text = (sonuc.ToString());
-            }
+            _islem = '^';
+            _ekrantemizlenecekmi = true;
+            _ilksayi = Convert.ToInt32(label1.Text);         
         }
     }
 }
