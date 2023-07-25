@@ -48,6 +48,8 @@
             this.rakam2 = new System.Windows.Forms.Button();
             this.kareHesapla = new System.Windows.Forms.Button();
             this.usHesaplama = new System.Windows.Forms.Button();
+            this.kok = new System.Windows.Forms.Button();
+            this.gecmis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -259,11 +261,35 @@
             this.usHesaplama.UseVisualStyleBackColor = true;
             this.usHesaplama.Click += new System.EventHandler(this.usHesaplama_Click);
             // 
+            // kok
+            // 
+            this.kok.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kok.Location = new System.Drawing.Point(174, 415);
+            this.kok.Name = "kok";
+            this.kok.Size = new System.Drawing.Size(75, 75);
+            this.kok.TabIndex = 19;
+            this.kok.Text = "kök";
+            this.kok.UseVisualStyleBackColor = true;
+            this.kok.Click += new System.EventHandler(this.kok_Click);
+            // 
+            // gecmis
+            // 
+            this.gecmis.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gecmis.Location = new System.Drawing.Point(251, 415);
+            this.gecmis.Name = "gecmis";
+            this.gecmis.Size = new System.Drawing.Size(75, 75);
+            this.gecmis.TabIndex = 20;
+            this.gecmis.Text = "G";
+            this.gecmis.UseVisualStyleBackColor = true;
+            this.gecmis.Click += new System.EventHandler(this.gecmis_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 495);
+            this.Controls.Add(this.gecmis);
+            this.Controls.Add(this.kok);
             this.Controls.Add(this.usHesaplama);
             this.Controls.Add(this.kareHesapla);
             this.Controls.Add(this.rakam2);
@@ -313,6 +339,8 @@
         private System.Windows.Forms.Button rakam2;
         private System.Windows.Forms.Button kareHesapla;
         private System.Windows.Forms.Button usHesaplama;
+        private System.Windows.Forms.Button kok;
+        private System.Windows.Forms.Button gecmis;
     }
 }
 

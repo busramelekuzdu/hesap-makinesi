@@ -149,7 +149,7 @@ namespace hesap_makinesi1
         }
         private void eşittir_Click(object sender, EventArgs e)
         {
-            int sonuc = 0;
+            double sonuc = 0;
             _ikincisayi = Convert.ToInt32(label1.Text);
             switch (_islem)
             {
@@ -166,9 +166,13 @@ namespace hesap_makinesi1
                     sonuc = _ilksayi / _ikincisayi;
                     break;
                 case '^':
-                    sonuc =Convert.ToInt32( Math.Pow(Convert.ToDouble( _ilksayi), Convert.ToDouble(_ikincisayi)));
+                    sonuc = Math.Pow(Convert.ToDouble(_ilksayi), Convert.ToDouble(_ikincisayi));
+                    break;
+                case 'k':
+                    sonuc = Math.Pow(Convert.ToDouble(_ilksayi), 1 / Convert.ToDouble(_ikincisayi));
                     break;
             }
+            sonuc = Math.Round(sonuc,2);
             label1.Text = Convert.ToString(sonuc);
         }
         private void bölme_Click(object sender, EventArgs e)
@@ -188,7 +192,19 @@ namespace hesap_makinesi1
         {
             _islem = '^';
             _ekrantemizlenecekmi = true;
-            _ilksayi = Convert.ToInt32(label1.Text);         
+            _ilksayi = Convert.ToInt32(label1.Text);
+        }
+
+        private void kok_Click(object sender, EventArgs e)
+        {
+            _islem = 'k';
+            _ekrantemizlenecekmi = true;
+            _ilksayi = Convert.ToInt32(label1.Text);
+        }
+
+        private void gecmis_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
